@@ -12,18 +12,6 @@ dependencies {
     compile 'com.yipianfengye:MLog:1.0.0'
 }
 </code></pre>
-
-- 自定义Application
-
-<pre><code>
-<application
-        android:name=".MApplication"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-</code></pre>
         
 - 在自定义的Application的onCreate方法中初始化MLog框架
 
