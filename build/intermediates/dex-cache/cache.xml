@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/aaron/AndroidStudioProjects/MLog/app/build/intermediates/exploded-aar/MLog/library/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="40551ad0615f2edaf0d0b83c15bab7769c6e21bc">
-        <dex dex="/Users/aaron/AndroidStudioProjects/MLog/app/build/intermediates/pre-dexed/debug/classes-7296a4c26749de8d73728289698bfd4558962079.jar" />
-    </item>
-
-</items>
+<items version="2" />

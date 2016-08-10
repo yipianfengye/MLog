@@ -2,7 +2,7 @@ package com.example.aaron.mlog;
 
 import android.app.Application;
 
-import com.example.aaron.library.MLog;
+import com.uuch.mlogLibrary.MLog;
 
 /**
  * Created by aaron on 15/11/27.

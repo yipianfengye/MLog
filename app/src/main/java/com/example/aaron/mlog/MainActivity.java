@@ -2,20 +2,22 @@ package com.example.aaron.mlog;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
-import com.example.aaron.library.MLog;
+import com.uuch.mlogLibrary.MLog;
 
-public class MainActivity extends Activity {
+/**
+ * 测试日志
+ */
+public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = MainActivity.class.getSimpleName();
 
     public Activity mContext = null;
 
-    public TextView title = null;
+    public Button button1 = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +26,23 @@ public class MainActivity extends Activity {
 
         mContext = this;
 
-        title = (TextView) findViewById(R.id.title);
-        title.setOnClickListener(new View.OnClickListener() {
+        initView();
+
+        initListener();
+    }
+
+    /**
+     * 初始化组件
+     */
+    private void initView() {
+        button1 = (Button) findViewById(R.id.button1);
+    }
+
+    /**
+     * 初始化组件事件监听
+     */
+    private void initListener() {
+        button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 MLog.v("this is a v msg!!!");
